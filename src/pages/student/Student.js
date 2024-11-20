@@ -1,7 +1,7 @@
 // frontend/src/pages/student/Student.js
 
 import React from 'react';
-import { Route, Routes } from 'react-router-dom';
+import { Routes } from 'react-router-dom';
 import StudentTopbar from './components/StudentTopbar';
 import StudentSidebar from './components/StudentSidebar';
 import './css/Student.css'; // Import the CSS file for styling

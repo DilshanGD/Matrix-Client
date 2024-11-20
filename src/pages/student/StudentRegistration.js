@@ -82,7 +82,7 @@ const StudentRegistration = () => {
     if (!validateForm()) return;
 
     try {
-      const response = await axios.post(`${config.apiUrl}/student/student-registration`, formData, {
+      await axios.post(`${config.apiUrl}/student/student-registration`, formData, {
         headers: { 'Content-Type': 'application/json' }
       });
       setSuccessMessage('Registration successful! You can now log in.');
