@@ -77,7 +77,7 @@ const SubjectBooks = () => {
         <ul>
           {books.map((book, index) => (
             <li key={index} className="book-item">
-              <img src={`/${book.image}`} alt={`${book.title}'s cover`} className="book-image" />
+              <img src={book.image?.startsWith('http') ? book.image : `/${book.image}`} alt={`${book.title}'s cover`} className="book-image" />
               <div className="book-info">
                 <p><strong>{book.title}</strong></p>
                 <p>Author: {book.author}</p>
